@@ -100,9 +100,7 @@ h1 {
 .button:hover {
     background-color: #f44336;
     color: white;
-}border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+   
 }
 .contain {
     display: flex;
