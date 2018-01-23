@@ -6,6 +6,7 @@ class Videos(object):
     vVALID_RATING = ["G", "PG", "PG-13", "R"]
 
     def __init__(self, title, plot, duration):
+        """ initalizes objects with attributes to display in tile"""
         self.title = title
         self.plot = plot
         self.duration = duration
@@ -23,6 +24,7 @@ class Movies(Videos):
     """ Class to hold movie object child of Videos"""
 
     def __init__(self, title, plot, duration, trailer_youtube_url, poster_image_url):
+        ''' Inherents attributes for Video and sets trailer and poster '''
         super(Movies, self).__init__(title, plot, duration)
         self.trailer_youtube_url = trailer_youtube_url
         self.poster_image_url = poster_image_url
@@ -32,6 +34,7 @@ class Tv_Shows(Videos):
     """ Class to hold tv show objects child of Videos"""
 
     def __init__(self, title, plot, duration, trailer_youtube_url, poster_image_url, ):
+        ''' Inherents attributes for Video and sets trailer and poster '''
         super(Tv_Shows, self).__init__(title, plot, duration)
         self.trailer_youtube_url = trailer_youtube_url
         self.poster_image_url = poster_image_url
